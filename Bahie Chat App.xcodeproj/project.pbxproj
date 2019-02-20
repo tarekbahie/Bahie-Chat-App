@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476487FB221C91300084BB11 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476487FA221C91300084BB11 /* MessagesVC.swift */; };
+		476487FE221C914A0084BB11 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476487FD221C914A0084BB11 /* MessageCell.swift */; };
+		47648800221C91E70084BB11 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476487FF221C91E70084BB11 /* DataService.swift */; };
+		47648802221C93AA0084BB11 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47648801221C93AA0084BB11 /* Message.swift */; };
 		476593702219D5D100B1A9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765936F2219D5D100B1A9A3 /* AppDelegate.swift */; };
-		476593722219D5D100B1A9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593712219D5D100B1A9A3 /* ViewController.swift */; };
+		476593722219D5D100B1A9A3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593712219D5D100B1A9A3 /* RegisterVC.swift */; };
 		476593752219D5D100B1A9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476593732219D5D100B1A9A3 /* Main.storyboard */; };
 		476593772219D5D200B1A9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476593762219D5D200B1A9A3 /* Assets.xcassets */; };
 		4765937A2219D5D200B1A9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476593782219D5D200B1A9A3 /* LaunchScreen.storyboard */; };
+		476593822219D68400B1A9A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 476593812219D68400B1A9A3 /* GoogleService-Info.plist */; };
+		476593872219DE2800B1A9A3 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593862219DE2800B1A9A3 /* WelcomeVC.swift */; };
+		476593892219DE3A00B1A9A3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593882219DE3A00B1A9A3 /* LoginVC.swift */; };
+		4765938B2219DF5000B1A9A3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938A2219DF5000B1A9A3 /* CircleImage.swift */; };
+		4765938E2219E00800B1A9A3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938D2219E00800B1A9A3 /* AuthService.swift */; };
+		476593902219E02600B1A9A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938F2219E02600B1A9A3 /* Constants.swift */; };
+		476593922219F45E00B1A9A3 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593912219F45E00B1A9A3 /* ChatVC.swift */; };
+		4794B8A3221A07E2005E05D6 /* BindToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794B8A2221A07E2005E05D6 /* BindToView.swift */; };
+		9E6621851D445B0ACA27B58C /* Pods_Bahie_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A85CCE42AE549F595C32202 /* Pods_Bahie_Chat_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29DDFA54473E24532BF65642 /* Pods-Bahie Chat App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bahie Chat App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bahie Chat App/Pods-Bahie Chat App.debug.xcconfig"; sourceTree = "<group>"; };
+		2A3E2E0D78F033935DAB7679 /* Pods-Bahie Chat App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bahie Chat App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bahie Chat App/Pods-Bahie Chat App.release.xcconfig"; sourceTree = "<group>"; };
+		476487FA221C91300084BB11 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		476487FD221C914A0084BB11 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		476487FF221C91E70084BB11 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		47648801221C93AA0084BB11 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4765936C2219D5D100B1A9A3 /* Bahie Chat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bahie Chat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4765936F2219D5D100B1A9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		476593712219D5D100B1A9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		476593712219D5D100B1A9A3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		476593742219D5D100B1A9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		476593762219D5D200B1A9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476593792219D5D200B1A9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4765937B2219D5D200B1A9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476593812219D68400B1A9A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		476593862219DE2800B1A9A3 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		476593882219DE3A00B1A9A3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4765938A2219DF5000B1A9A3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4765938D2219E00800B1A9A3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4765938F2219E02600B1A9A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		476593912219F45E00B1A9A3 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		4794B8A2221A07E2005E05D6 /* BindToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindToView.swift; sourceTree = "<group>"; };
+		4A85CCE42AE549F595C32202 /* Pods_Bahie_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bahie_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6621851D445B0ACA27B58C /* Pods_Bahie_Chat_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		325330347E36A2CC37CE1D65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A85CCE42AE549F595C32202 /* Pods_Bahie_Chat_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		476593632219D5D100B1A9A3 = {
 			isa = PBXGroup;
 			children = (
 				4765936E2219D5D100B1A9A3 /* Bahie Chat App */,
 				4765936D2219D5D100B1A9A3 /* Products */,
+				6EBA43F2236F40A4505659EC /* Pods */,
+				325330347E36A2CC37CE1D65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,67 @@
 		4765936E2219D5D100B1A9A3 /* Bahie Chat App */ = {
 			isa = PBXGroup;
 			children = (
-				4765936F2219D5D100B1A9A3 /* AppDelegate.swift */,
-				476593712219D5D100B1A9A3 /* ViewController.swift */,
-				476593732219D5D100B1A9A3 /* Main.storyboard */,
+				4765938C2219DFF500B1A9A3 /* Services */,
+				476593852219D85100B1A9A3 /* Model */,
+				476593832219D83500B1A9A3 /* Controller */,
+				476593842219D84900B1A9A3 /* View */,
 				476593762219D5D200B1A9A3 /* Assets.xcassets */,
-				476593782219D5D200B1A9A3 /* LaunchScreen.storyboard */,
 				4765937B2219D5D200B1A9A3 /* Info.plist */,
+				476593812219D68400B1A9A3 /* GoogleService-Info.plist */,
 			);
 			path = "Bahie Chat App";
+			sourceTree = "<group>";
+		};
+		476593832219D83500B1A9A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4765936F2219D5D100B1A9A3 /* AppDelegate.swift */,
+				476593862219DE2800B1A9A3 /* WelcomeVC.swift */,
+				476593712219D5D100B1A9A3 /* RegisterVC.swift */,
+				476593882219DE3A00B1A9A3 /* LoginVC.swift */,
+				476593912219F45E00B1A9A3 /* ChatVC.swift */,
+				476487FA221C91300084BB11 /* MessagesVC.swift */,
+				476487FD221C914A0084BB11 /* MessageCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		476593842219D84900B1A9A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				476593732219D5D100B1A9A3 /* Main.storyboard */,
+				476593782219D5D200B1A9A3 /* LaunchScreen.storyboard */,
+				4765938A2219DF5000B1A9A3 /* CircleImage.swift */,
+				4794B8A2221A07E2005E05D6 /* BindToView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		476593852219D85100B1A9A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47648801221C93AA0084BB11 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4765938C2219DFF500B1A9A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4765938D2219E00800B1A9A3 /* AuthService.swift */,
+				4765938F2219E02600B1A9A3 /* Constants.swift */,
+				476487FF221C91E70084BB11 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6EBA43F2236F40A4505659EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29DDFA54473E24532BF65642 /* Pods-Bahie Chat App.debug.xcconfig */,
+				2A3E2E0D78F033935DAB7679 /* Pods-Bahie Chat App.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4765937E2219D5D200B1A9A3 /* Build configuration list for PBXNativeTarget "Bahie Chat App" */;
 			buildPhases = (
+				55275C88EACF715BD6E8683D /* [CP] Check Pods Manifest.lock */,
 				476593682219D5D100B1A9A3 /* Sources */,
 				476593692219D5D100B1A9A3 /* Frameworks */,
 				4765936A2219D5D100B1A9A3 /* Resources */,
+				A6495F43CDE4565320B35DAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4765937A2219D5D200B1A9A3 /* LaunchScreen.storyboard in Resources */,
+				476593822219D68400B1A9A3 /* GoogleService-Info.plist in Resources */,
 				476593772219D5D200B1A9A3 /* Assets.xcassets in Resources */,
 				476593752219D5D100B1A9A3 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +225,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55275C88EACF715BD6E8683D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bahie Chat App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6495F43CDE4565320B35DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bahie Chat App/Pods-Bahie Chat App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bahie Chat App/Pods-Bahie Chat App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		476593682219D5D100B1A9A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476593722219D5D100B1A9A3 /* ViewController.swift in Sources */,
+				476487FE221C914A0084BB11 /* MessageCell.swift in Sources */,
+				4794B8A3221A07E2005E05D6 /* BindToView.swift in Sources */,
+				476593922219F45E00B1A9A3 /* ChatVC.swift in Sources */,
+				47648800221C91E70084BB11 /* DataService.swift in Sources */,
+				476593872219DE2800B1A9A3 /* WelcomeVC.swift in Sources */,
+				476593722219D5D100B1A9A3 /* RegisterVC.swift in Sources */,
+				476593892219DE3A00B1A9A3 /* LoginVC.swift in Sources */,
+				4765938E2219E00800B1A9A3 /* AuthService.swift in Sources */,
+				476593902219E02600B1A9A3 /* Constants.swift in Sources */,
+				47648802221C93AA0084BB11 /* Message.swift in Sources */,
 				476593702219D5D100B1A9A3 /* AppDelegate.swift in Sources */,
+				476487FB221C91300084BB11 /* MessagesVC.swift in Sources */,
+				4765938B2219DF5000B1A9A3 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +437,13 @@
 		};
 		4765937F2219D5D200B1A9A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DDFA54473E24532BF65642 /* Pods-Bahie Chat App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = "Bahie Chat App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +457,13 @@
 		};
 		476593802219D5D200B1A9A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3E2E0D78F033935DAB7679 /* Pods-Bahie Chat App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = "Bahie Chat App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
