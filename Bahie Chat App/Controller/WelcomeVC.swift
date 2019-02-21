@@ -31,6 +31,5 @@ class WelcomeVC: UIViewController {
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "toLogin", sender: self)
     }
-    
-    
+    @IBAction func prepareForUnwind(segue : UIStoryboardSegue){}
 }

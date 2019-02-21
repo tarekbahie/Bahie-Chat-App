@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseStorage
 import FirebaseDatabase
+import SVProgressHUD
 
 class RegisterVC: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
@@ -51,6 +52,9 @@ class RegisterVC: UIViewController,UINavigationControllerDelegate,UIImagePickerC
             }
     @IBAction func createBtnPressed(_ sender: Any) {
         if usernameLbl.text != "" && passwordLbl.text != "" {
+            SVProgressHUD.setDefaultStyle(.dark)
+            SVProgressHUD.show()
+            
             AuthService.instance.createUser(name: usernameLbl.text!, pass: passwordLbl.text!) { (success, error) in
                 if success {
                     let storageRef = Storage.storage().reference(forURL: "gs://bahie-s-chat.appspot.com").child("profileImg").child((Auth.auth().currentUser?.uid)!)
@@ -73,6 +77,7 @@ class RegisterVC: UIViewController,UINavigationControllerDelegate,UIImagePickerC
                     AuthService.instance.loginUser(withEmail: self.usernameLbl.text!, withPassword: self.passwordLbl.text!, loginComplete: { (success, error) in
                         if success {
                         print("login successful")
+                            SVProgressHUD.dismiss()
                             self.performSegue(withIdentifier: "toHome", sender: self)
                         } else {
                             print("Login failed")

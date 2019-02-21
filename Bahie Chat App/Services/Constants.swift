@@ -11,3 +11,4 @@ let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 let USER_ID = "USERID"
+let userDidLogout = Notification.Name("userLogOut")

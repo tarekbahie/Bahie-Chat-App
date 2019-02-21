@@ -5,7 +5,6 @@ import FirebaseAuth
 import Firebase
 import FirebaseStorage
 
-typealias CompletionHandler = (_ Success: Bool) -> [Message]
 let ST_BASE = Storage.storage().reference(forURL: "gs://bahie-s-chat.appspot.com")
 
 class DataService {
@@ -35,10 +34,12 @@ class DataService {
             newMessage.sender = sender
             newMessage.messageBody = text
             
-            let imageRef = storageRef.child("profileImg").child(sender)
+            let imageRef = ST_BASE.child("profileImg").child(sender)
             imageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) in
                 if let error = error {
                     print(error)
+                    let image = UIImage(named: "profileDefault")
+                    newMessage.senderImage = image!
                     return
                 } else {
                     let image = UIImage(data: data!)
@@ -50,19 +51,4 @@ class DataService {
             
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

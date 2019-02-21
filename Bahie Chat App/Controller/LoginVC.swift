@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LoginVC: UIViewController {
 
@@ -29,9 +30,12 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
+        SVProgressHUD.setDefaultStyle(.dark)
+        SVProgressHUD.show()
         AuthService.instance.loginUser(withEmail: emailLbl.text!, withPassword: self.passwordLbl.text!, loginComplete: { (success, error) in
             if success {
                 print("login successful")
+                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "toChat", sender: self)
             } else {
                 print("Login failed")

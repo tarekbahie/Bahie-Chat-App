@@ -22,6 +22,7 @@ class MessagesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true)
        view.bindToKeyboard()
         messageTableView.delegate = self
         messageTableView.dataSource = self
@@ -48,19 +49,10 @@ class MessagesVC: UIViewController {
             messageTxtField.isEnabled = false
             sendBtn.isEnabled = false
             let userID = Auth.auth().currentUser?.uid
-            let imageRef = storageRef.child("profileImg").child(userID!)
-            imageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) in
-                if let error = error {
-                    print(error)
-                    return
-                } else {
-                    DataService.instance.createMessage(withContent: self.messageTxtField.text!, andUserID: userID!)
-                    self.messageTxtField.text = ""
-                    self.messageTxtField.isEnabled = true
-                    self.sendBtn.isEnabled = true
-                    
-                }
-            }
+            DataService.instance.createMessage(withContent: self.messageTxtField.text!, andUserID: userID!)
+            self.messageTxtField.text = ""
+            self.messageTxtField.isEnabled = true
+            self.sendBtn.isEnabled = true
         }
     }
     
@@ -69,7 +61,6 @@ class MessagesVC: UIViewController {
             try Auth.auth().signOut()
             addCustomView(text: "success")
             
-            
         } catch {
             print(error)
             addCustomView(text: "error")
@@ -77,22 +68,28 @@ class MessagesVC: UIViewController {
     }
     
     func addCustomView(text : String) {
-        let height = 50
-        let width = 200
+        let height = 150
+        let width = 250
         label.frame = CGRect(x: (view.frame.width / 2) - CGFloat(width / 2), y: (view.frame.height / 2) - CGFloat(height / 2), width: CGFloat(width), height: CGFloat(height))
-        label.backgroundColor = #colorLiteral(red: 0.1565752923, green: 0.180654496, blue: 0.2063922584, alpha: 0.6799550514)
+        label.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         label.layer.cornerRadius = 15
         label.clipsToBounds = true
         label.textAlignment = NSTextAlignment.center
         if text == "success"{
-            label.text = "sign-out successful"
+            label.text = "sign-out successful ❗️"
+            label.textColor = #colorLiteral(red: 0.8782561421, green: 0, blue: 0.003503208747, alpha: 1)
             view.addSubview(label)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.label.removeFromSuperview()
+                let newViewController = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as! WelcomeVC
+                let navigationController = UINavigationController(rootViewController: newViewController)
+                let appdelegate = UIApplication.shared.delegate as! AppDelegate
+                appdelegate.window!.rootViewController = navigationController
                 self.navigationController?.popToRootViewController(animated: true)
             }
         } else {
-            label.text = "sign-out unsuccessful"
+            label.text = "sign-out unsuccessful ❌"
+            label.textColor = #colorLiteral(red: 0.8782561421, green: 0, blue: 0.003503208747, alpha: 1)
             view.addSubview(label)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.label.removeFromSuperview()

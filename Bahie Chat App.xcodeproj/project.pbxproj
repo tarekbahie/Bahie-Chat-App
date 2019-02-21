@@ -22,7 +22,6 @@
 		4765938B2219DF5000B1A9A3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938A2219DF5000B1A9A3 /* CircleImage.swift */; };
 		4765938E2219E00800B1A9A3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938D2219E00800B1A9A3 /* AuthService.swift */; };
 		476593902219E02600B1A9A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4765938F2219E02600B1A9A3 /* Constants.swift */; };
-		476593922219F45E00B1A9A3 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476593912219F45E00B1A9A3 /* ChatVC.swift */; };
 		4794B8A3221A07E2005E05D6 /* BindToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794B8A2221A07E2005E05D6 /* BindToView.swift */; };
 		9E6621851D445B0ACA27B58C /* Pods_Bahie_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A85CCE42AE549F595C32202 /* Pods_Bahie_Chat_App.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		4765938A2219DF5000B1A9A3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4765938D2219E00800B1A9A3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4765938F2219E02600B1A9A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		476593912219F45E00B1A9A3 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4794B8A2221A07E2005E05D6 /* BindToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindToView.swift; sourceTree = "<group>"; };
 		4A85CCE42AE549F595C32202 /* Pods_Bahie_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bahie_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 				476593862219DE2800B1A9A3 /* WelcomeVC.swift */,
 				476593712219D5D100B1A9A3 /* RegisterVC.swift */,
 				476593882219DE3A00B1A9A3 /* LoginVC.swift */,
-				476593912219F45E00B1A9A3 /* ChatVC.swift */,
 				476487FA221C91300084BB11 /* MessagesVC.swift */,
 				476487FD221C914A0084BB11 /* MessageCell.swift */,
 			);
@@ -283,7 +280,6 @@
 			files = (
 				476487FE221C914A0084BB11 /* MessageCell.swift in Sources */,
 				4794B8A3221A07E2005E05D6 /* BindToView.swift in Sources */,
-				476593922219F45E00B1A9A3 /* ChatVC.swift in Sources */,
 				47648800221C91E70084BB11 /* DataService.swift in Sources */,
 				476593872219DE2800B1A9A3 /* WelcomeVC.swift in Sources */,
 				476593722219D5D100B1A9A3 /* RegisterVC.swift in Sources */,

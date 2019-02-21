@@ -3,10 +3,11 @@ import UIKit
 extension UIView {
     
     func bindToKeyboard(){
-        NotificationCenter.default.addObserver(self, selector: #selector(UIButton.keyboardWillChange(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UIButton.keyboardWillShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UIButton.keyboardWillHide), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
-    @objc func keyboardWillChange(_ notification: NSNotification) {
+    @objc func keyboardWillShow(_ notification: NSNotification) {
         let duration = notification.userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
         let curve = notification.userInfo![UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt
         let curFrame = (notification.userInfo![UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
@@ -18,5 +19,10 @@ extension UIView {
             
         },completion: nil)
         
+    }
+    @objc func keyboardWillHide() {
+        if self.frame.origin.y != 0 {
+            self.frame.origin.y = 0
+        }
     }
 }

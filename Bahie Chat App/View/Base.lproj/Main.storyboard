@@ -13,7 +13,7 @@
         <!--WelcomeVC-->
         <scene sceneID="ORM-JL-yoc">
             <objects>
-                <viewController id="7uX-mn-EfW" customClass="WelcomeVC" customModule="Bahie_Chat_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="7uX-mn-EfW" customClass="WelcomeVC" customModule="Bahie_Chat_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgz-hA-nmw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="246" horizontalCompressionResistancePriority="746" verticalCompressionResistancePriority="745" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-uc-eo7">
-                                <rect key="frame" x="0.0" y="144" width="375" height="503"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="546"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-rE-7z8">
                                         <rect key="frame" x="86.5" y="0.0" width="202" height="30"/>
@@ -113,10 +113,14 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mXH-Jb-LUq">
-                                        <rect key="frame" x="62.5" y="170" width="250" height="71"/>
+                                        <rect key="frame" x="62.5" y="170" width="250" height="114"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4E-Wc-cPB">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" verticalHuggingPriority="253" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="759" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-ti-TTL">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
+                                                <rect key="frame" x="0.0" y="70" width="250" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="0TB-HX-i9u"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="e4s-tz-iaH"/>
@@ -126,7 +130,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tds-jb-jRB">
-                                                <rect key="frame" x="0.0" y="29" width="250" height="2"/>
+                                                <rect key="frame" x="0.0" y="90" width="250" height="2"/>
                                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="7YY-O0-Bcq"/>
@@ -134,7 +138,7 @@
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="258" verticalHuggingPriority="257" horizontalCompressionResistancePriority="756" verticalCompressionResistancePriority="757" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQs-OD-b4S">
-                                                <rect key="frame" x="0.0" y="40" width="250" height="20"/>
+                                                <rect key="frame" x="0.0" y="92" width="250" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="3MV-FD-2aa"/>
                                                     <constraint firstAttribute="height" constant="20" id="MEG-SS-dlt"/>
@@ -144,7 +148,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bn-We-zGX">
-                                                <rect key="frame" x="0.0" y="69" width="250" height="2"/>
+                                                <rect key="frame" x="0.0" y="112" width="250" height="2"/>
                                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="7ph-7k-Xo5"/>
@@ -152,16 +156,20 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h4E-Wc-cPB" firstAttribute="width" secondItem="NeO-ti-TTL" secondAttribute="width" id="6QD-UD-nnH"/>
+                                            <constraint firstItem="h4E-Wc-cPB" firstAttribute="height" secondItem="NeO-ti-TTL" secondAttribute="height" constant="50" id="pz1-kt-9Z8"/>
+                                        </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="dMV-DS-O0H">
-                                        <rect key="frame" x="137.5" y="297" width="100" height="100"/>
+                                        <rect key="frame" x="137.5" y="340" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="UhW-OH-E0k"/>
                                             <constraint firstAttribute="height" constant="100" id="w8j-WK-9VA"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvi-Wb-VQq">
-                                        <rect key="frame" x="62.5" y="453" width="250" height="50"/>
+                                        <rect key="frame" x="62.5" y="496" width="250" height="50"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="5Oj-Qx-4QJ"/>
@@ -335,64 +343,6 @@
             </objects>
             <point key="canvasLocation" x="1272.8" y="487.10644677661173"/>
         </scene>
-        <!--ChatVC-->
-        <scene sceneID="I6a-Jw-PRN">
-            <objects>
-                <viewController id="U4p-ef-aMi" customClass="ChatVC" customModule="Bahie_Chat_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OPg-i8-7Ll">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-bo-JIN">
-                                <rect key="frame" x="87.5" y="200.5" width="200" height="266"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-1t-wpv" customClass="CircleImage" customModule="Bahie_Chat_App" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="5Ig-mo-vms"/>
-                                            <constraint firstAttribute="width" constant="100" id="hyM-Yf-P53"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keI-Ep-2Po">
-                                        <rect key="frame" x="0.0" y="163" width="200" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="mXc-kt-Y93"/>
-                                            <constraint firstAttribute="width" constant="200" id="zLz-jq-o3I"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-Ed-VcS">
-                                        <rect key="frame" x="0.0" y="246" width="200" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="5lv-Ky-719"/>
-                                            <constraint firstAttribute="height" constant="20" id="wke-2B-8dP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="nzz-bo-JIN" firstAttribute="centerY" secondItem="OPg-i8-7Ll" secondAttribute="centerY" id="O4d-vl-41G"/>
-                            <constraint firstItem="nzz-bo-JIN" firstAttribute="centerX" secondItem="OPg-i8-7Ll" secondAttribute="centerX" id="idC-QZ-uwx"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="fJh-hP-9PN"/>
-                    </view>
-                    <connections>
-                        <outlet property="userIDLbl" destination="C0y-Ed-VcS" id="FXb-AW-DBB"/>
-                        <outlet property="userImage" destination="RGT-1t-wpv" id="4Xg-hf-33f"/>
-                        <outlet property="usernameLbl" destination="keI-Ep-2Po" id="g9j-gk-WBl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gy-jV-8UY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3447.1999999999998" y="506.89655172413796"/>
-        </scene>
         <!--Title-->
         <scene sceneID="aiw-W1-KlS">
             <objects>
@@ -552,6 +502,6 @@
         <image name="send" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Dp-rF-RHk"/>
+        <segue reference="XXR-gU-ZEL"/>
     </inferredMetricsTieBreakers>
 </document>
